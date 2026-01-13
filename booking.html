@@ -1,75 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Book — Premier Barber Lounge (Demo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book • Premier Barber Lounge</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container header-inner">
-    <div class="brand-wrap">
+    <a class="brand" href="index.html">
       <div class="logo-text">Premier Barber Lounge</div>
-    </div>
+    </a>
 
     <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
-      <a href="booking.html">Book</a>
+      <a class="active" href="booking.html">Book</a>
     </nav>
   </div>
 </header>
 
 <main>
+  <div class="page-title container">
+    <h1>Book an Appointment</h1>
+    <p>Tap below to book instantly using GetSquire.</p>
+  </div>
+
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Book an Appointment</h2>
-        <p>Book right here — no extra pages.</p>
-      </div>
+      <div class="card pad" style="text-align:center">
+        <h2 style="margin-top:0">Book with GetSquire</h2>
+        <p>GetSquire doesn’t allow embedding inside websites, so this button opens booking in a new tab.</p>
 
-      <div class="card">
-        <!-- Squire embed attempt -->
-       <section class="booking">
-  <div class="container">
-    <h1>Book an Appointment</h1>
-    <p>
-      Tap the button below to book your appointment instantly through our
-      secure booking system.
-    </p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+          <a class="btn primary" target="_blank"
+             href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPTjv5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafVbueUIXccSUOUoy2K8KiACMoysRh97MBuJF-kamIbj4w7VML_rDBBjyWItA_aem_Xa2_XbshlbciPs6l14ulSg">
+            Open Booking
+          </a>
 
-    <a
-      href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2"
-      target="_blank"
-      class="btn primary"
-    >
-      Book with GetSquire
-    </a>
-  </div>
-</section>
+          <a class="btn" href="tel:+13163474298">Call (316) 347-4298</a>
 
-        <!-- Fallback (if Squire blocks embedding on some devices/browsers) -->
-        <p style="margin-top:14px; color: var(--muted); font-size:.9rem;">
-          If the booking calendar doesn’t load on your device, tap the button below:
+          <a class="btn" target="_blank"
+             href="https://www.google.com/maps/search/?api=1&query=601+N+West+Street+Suite+134+Wichita+KS">
+            Get Directions
+          </a>
+        </div>
+
+        <hr class="sep" />
+        <p class="mini">
+          Address: 601 N West Street, Suite 134, Wichita, KS
         </p>
-
-        <a class="btn btn-primary"
-           href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPTjv5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafVbueUIXccSUOUoy2K8KiACMoysRh97MBuJF-kamIbj4w7VML_rDBBjyWItA_aem_Xa2_XbshlbciPs6l14ulSg"
-           target="_blank" rel="noopener">
-          Open Booking in Squire
-        </a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  Demo preview only — not the official Premier Barber Lounge website.
+  <div class="container">© <span id="y"></span> Premier Barber Lounge</div>
 </footer>
 
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
