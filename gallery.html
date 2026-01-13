@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gallery — Premier Barber Lounge (Demo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery • Premier Barber Lounge</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container header-inner">
-    <div class="brand-wrap">
+    <a class="brand" href="index.html">
       <div class="logo-text">Premier Barber Lounge</div>
-    </div>
+    </a>
 
     <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
+      <a class="active" href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
       <a href="booking.html">Book</a>
     </nav>
@@ -25,27 +25,29 @@
 </header>
 
 <main>
+  <div class="page-title container">
+    <h1>Gallery</h1>
+    <p>Demo gallery — replace these with real cut photos or videos later.</p>
+  </div>
+
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Gallery</h2>
-        <p>Placeholder photos — can be replaced with real cuts or embedded video clips.</p>
-      </div>
-
-      <div class="card">
-        <div class="gallery-grid">
-          <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder">
-          <img src="https://images.pexels.com/photos/3992879/pexels-photo-3992879.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder">
-          <img src="https://images.pexels.com/photos/3998425/pexels-photo-3998425.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder">
-        </div>
+      <div class="gallery-grid">
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  Demo preview only — not the official Premier Barber Lounge website.
+  <div class="container">© <span id="y"></span> Premier Barber Lounge</div>
 </footer>
 
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
