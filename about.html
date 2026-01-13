@@ -54,13 +54,15 @@
           Wichita, KS
         </p>
 
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-          <a class="btn" href="tel:+13163474298">Call</a>
-         <a id="directionsBtnAbout" class="btn primary" target="_blank" rel="noopener">
-  Get Directions
-</a>
-          <a class="btn" href="booking.html">Booking</a>
-        </div>
+       <div style="display:flex; gap:10px; flex-wrap:wrap">
+  <a id="callBtnAbout" class="btn">
+    Call
+  </a>
+
+  <a id="directionsBtnAbout" class="btn primary" target="_blank" rel="noopener">
+    Get Directions
+  </a>
+</div>
 
         <hr class="sep" />
         <p class="mini">Hours not listed on IG — add them here when you get them.</p>
@@ -73,9 +75,9 @@
   <div class="container">© <span id="y"></span> Premier Barber Lounge</div>
 </footer>
 
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-  <script>
+<script>
   (function () {
+    const phoneNumber = "+13163474298";
     const address = "601 N West Street Suite 134, Wichita, KS";
 
     const appleMaps =
@@ -87,6 +89,11 @@
     const isAppleDevice =
       /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
 
+    // Call button
+    document.getElementById("callBtnAbout").href =
+      "tel:" + phoneNumber;
+
+    // Directions button
     document.getElementById("directionsBtnAbout").href =
       isAppleDevice ? appleMaps : googleMaps;
   })();
