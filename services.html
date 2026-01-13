@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Services — Premier Barber Lounge (Demo)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services • Premier Barber Lounge</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container header-inner">
-    <div class="brand-wrap">
+    <a class="brand" href="index.html">
       <div class="logo-text">Premier Barber Lounge</div>
-    </div>
+    </a>
 
     <nav>
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a class="active" href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
       <a href="booking.html">Book</a>
@@ -25,35 +25,72 @@
 </header>
 
 <main>
+  <div class="page-title container">
+    <h1>Services</h1>
+    <p>Demo services — replace these with the exact list + pricing from the shop whenever you want.</p>
+  </div>
+
   <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Services</h2>
-        <p>Sample service list for the demo — prices and names can be customized.</p>
+    <div class="container grid-3">
+      <div class="card pad">
+        <h3>Haircut</h3>
+        <p>Clean cut with lineup and finish.</p>
+        <p><strong style="color:#fff">Demo Price: $35</strong></p>
       </div>
 
-      <div class="card">
-        <div class="services-list">
-          <div class="service-row"><span>Signature Haircut</span><span>$35</span></div>
-          <div class="service-row"><span>Skin Fade</span><span>$40</span></div>
-          <div class="service-row"><span>Line Up</span><span>$20</span></div>
-          <div class="service-row"><span>Haircut + Beard</span><span>$50</span></div>
-          <div class="service-row"><span>Beard Trim & Shape</span><span>$25</span></div>
+      <div class="card pad">
+        <h3>Fade / Taper</h3>
+        <p>Detailed blend, sharp edges, smooth finish.</p>
+        <p><strong style="color:#fff">Demo Price: $40</strong></p>
+      </div>
+
+      <div class="card pad">
+        <h3>Beard Trim</h3>
+        <p>Shape, lineup, and clean-up.</p>
+        <p><strong style="color:#fff">Demo Price: $20</strong></p>
+      </div>
+
+      <div class="card pad">
+        <h3>Haircut + Beard</h3>
+        <p>Full service combo.</p>
+        <p><strong style="color:#fff">Demo Price: $55</strong></p>
+      </div>
+
+      <div class="card pad">
+        <h3>Kids Cut</h3>
+        <p>Quick, clean, and patient service.</p>
+        <p><strong style="color:#fff">Demo Price: $25</strong></p>
+      </div>
+
+      <div class="card pad">
+        <h3>Lineup</h3>
+        <p>Edge-up, lineup, detail work.</p>
+        <p><strong style="color:#fff">Demo Price: $15</strong></p>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:18px">
+      <div class="card pad" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div>
+          <h3 style="margin:0 0 6px">Ready to book?</h3>
+          <p style="margin:0">Tap below to choose a time on GetSquire.</p>
         </div>
-
-        <p style="font-size:.85rem; margin-top:12px; color: var(--muted);">
-          Demo pricing only — we’ll update with your exact menu.
-        </p>
-
-        <a class="btn btn-primary" href="booking.html">Book Now</a>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn primary" target="_blank"
+             href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPTjv5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafVbueUIXccSUOUoy2K8KiACMoysRh97MBuJF-kamIbj4w7VML_rDBBjyWItA_aem_Xa2_XbshlbciPs6l14ulSg">
+            Book Now
+          </a>
+          <a class="btn" href="tel:+13163474298">Call</a>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  Demo preview only — not the official Premier Barber Lounge website.
+  <div class="container">© <span id="y"></span> Premier Barber Lounge</div>
 </footer>
 
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
