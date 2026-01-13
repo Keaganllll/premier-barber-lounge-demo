@@ -1,18 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book • Premier Barber Lounge</title>
+  <title>Book — Premier Barber Lounge</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container header-inner">
-    <a class="brand" href="index.html">
+    <div class="brand-wrap">
       <div class="logo-text">Premier Barber Lounge</div>
-    </a>
+    </div>
 
     <nav>
       <a href="index.html">Home</a>
@@ -24,48 +24,31 @@
   </div>
 </header>
 
-<main>
-  <div class="page-title container">
+<main class="container">
+  <section class="page-hero">
     <h1>Book an Appointment</h1>
-    <p>Tap the button below to book instantly on GetSquire.</p>
-  </div>
+    <p>GetSquire doesn’t allow booking to load inside another site, so we open it securely in a new tab.</p>
 
-  <section class="section">
-    <div class="container">
-      <div class="card pad" style="text-align:center">
-        <h2 style="margin-top:0">Booking</h2>
-        <p>GetSquire blocks booking embeds inside websites, so this opens in a new tab.</p>
+    <div class="card booking-card">
+      <a class="btn btn-primary"
+         href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+         target="_blank" rel="noopener">
+        Book on GetSquire →
+      </a>
 
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px">
-          <a class="btn primary" target="_blank" rel="noopener"
-             href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPTjv5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafVbueUIXccSUOUoy2K8KiACMoysRh97MBuJF-kamIbj4w7VML_rDBBjyWItA_aem_Xa2_XbshlbciPs6l14ulSg">
-            Book on GetSquire
-          </a>
-
-          <a class="btn" href="tel:+13163474298">Call (316) 347-4298</a>
-
-          <a class="btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/search/?api=1&query=601+N+West+Street+Suite+134+Wichita+KS">
-            Get Directions
-          </a>
-        </div>
-
-        <hr class="sep" />
-
-        <p class="mini" style="margin-bottom:0">
-          Address: <strong style="color:#fff">601 N West Street, Suite 134, Wichita, KS</strong>
-        </p>
+      <div class="booking-meta">
+        <p><strong>Phone:</strong> <a href="tel:+13163474298">(316) 347-4298</a></p>
+        <p><strong>Address:</strong> 601 N West Street Suite 134, Wichita, KS</p>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="container">© <span id="y"></span> Premier Barber Lounge</div>
+  <div class="container">
+    © Premier Barber Lounge • Wichita, KS
+  </div>
 </footer>
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
