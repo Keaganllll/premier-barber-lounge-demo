@@ -37,9 +37,9 @@
             Book Appointment
           </a>
 
-          <a class="btn" href="tel:+13163474298">Call (316) 347-4298</a>
+         <a id="callBtn" class="btn">Call</a>
 
-         <a id="directionsBtn" class="btn primary" target="_blank" rel="noopener">
+<a id="directionsBtn" class="btn primary" target="_blank" rel="noopener">
   Get Directions
 </a>
         </div>
@@ -137,14 +137,26 @@
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
-  <script>
+<script>
   (function () {
-    const addr = "601 N West Street Suite 134, Wichita, KS";
-    const apple = "https://maps.apple.com/?daddr=" + encodeURIComponent(addr);
-    const google = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(addr);
+    const phoneNumber = "+13163474298";
+    const address = "601 N West Street Suite 134, Wichita, KS";
 
-    const isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
-    document.getElementById("directionsBtn").href = isApple ? apple : google;
+    const appleMaps =
+      "https://maps.apple.com/?daddr=" + encodeURIComponent(address);
+
+    const googleMaps =
+      "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(address);
+
+    const isAppleDevice =
+      /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+
+    // Call button
+    document.getElementById("callBtn").href = "tel:" + phoneNumber;
+
+    // Directions button
+    document.getElementById("directionsBtn").href =
+      isAppleDevice ? appleMaps : googleMaps;
   })();
 </script>
 </body>
