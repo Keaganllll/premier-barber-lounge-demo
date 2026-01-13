@@ -74,5 +74,22 @@
 </footer>
 
 <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+  (function () {
+    const address = "601 N West Street Suite 134, Wichita, KS";
+
+    const appleMaps =
+      "https://maps.apple.com/?daddr=" + encodeURIComponent(address);
+
+    const googleMaps =
+      "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(address);
+
+    const isAppleDevice =
+      /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+
+    document.getElementById("directionsBtnAbout").href =
+      isAppleDevice ? appleMaps : googleMaps;
+  })();
+</script>
 </body>
 </html>
