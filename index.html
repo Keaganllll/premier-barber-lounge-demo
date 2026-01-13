@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Premier Barber Lounge — Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier Barber Lounge</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <div class="container header-inner">
-    <div class="brand-wrap">
+    <a class="brand" href="index.html">
       <div class="logo-text">Premier Barber Lounge</div>
-    </div>
+    </a>
 
     <nav>
-      <a href="index.html">Home</a>
+      <a class="active" href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
@@ -25,43 +25,47 @@
 </header>
 
 <main>
-
   <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="hero-eyebrow">Fades • Tapers • Beard Work</div>
-        <h1>Welcome to Premier Barber Lounge</h1>
-        <p>
-          A clean, modern space built around sharp cuts, smooth blends, and a premium experience.
-          This is a demo website showing how clients could find you and book fast.
-        </p>
-
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="booking.html">Book Appointment</a>
-          <a class="btn btn-outline" href="services.html">View Services</a>
-        </div>
-      </div>
-
+    <div class="container hero-grid">
       <div class="hero-card">
-        <strong>Demo preview only.</strong><br><br>
-        Photos and wording are placeholders to show layout and style.
-        If you like it, we swap in your real services, photos/videos, and brand details.
-      </div>
-    </div>
-  </section>
+        <h1>Welcome to Premier Barber Lounge</h1>
+        <p>Clean cuts. Consistent quality. Book fast and show up confident.</p>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Featured Work</h2>
-        <p>Placeholder images showing how haircut photos/videos could be displayed on the home page.</p>
+        <div class="hero-actions">
+          <a class="btn primary" target="_blank"
+             href="https://getsquire.com/booking/book/premier-barber-lounge-wichita-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAPTjv5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafVbueUIXccSUOUoy2K8KiACMoysRh97MBuJF-kamIbj4w7VML_rDBBjyWItA_aem_Xa2_XbshlbciPs6l14ulSg">
+            Book Appointment
+          </a>
+
+          <a class="btn" href="tel:+13163474298">Call (316) 347-4298</a>
+
+          <a class="btn" target="_blank"
+             href="https://www.google.com/maps/search/?api=1&query=601+N+West+Street+Suite+134+Wichita+KS">
+            Get Directions
+          </a>
+        </div>
+
+        <hr class="sep" />
+
+        <p class="mini">
+          Address: <strong style="color:#fff">601 N West Street, Suite 134, Wichita, KS</strong>
+        </p>
       </div>
 
-      <div class="card">
-        <div class="gallery-grid">
-          <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder barber photo">
-          <img src="https://images.pexels.com/photos/3998425/pexels-photo-3998425.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder fade photo">
-          <img src="https://images.pexels.com/photos/3992878/pexels-photo-3992878.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Placeholder chair photo">
+      <div class="hero-side">
+        <div class="badge">
+          <strong>Walk-ins?</strong> <span>Call to check availability</span>
+        </div>
+        <div class="badge">
+          <strong>Booking</strong> <span>Powered by GetSquire</span>
+        </div>
+        <div class="badge">
+          <strong>Fresh</strong> <span>Fades • Tapers • Beard Work</span>
+        </div>
+        <div class="card pad">
+          <h3>Quick Note</h3>
+          <p>New clients can find you on Google, tap book, and show up—simple.</p>
+          <a class="btn primary" href="booking.html">Go to Booking Page</a>
         </div>
       </div>
     </div>
@@ -69,26 +73,70 @@
 
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Why Clients Book Here</h2>
-        <p>Short, simple copy that builds trust fast.</p>
-      </div>
+      <h2>Featured Work</h2>
+      <p>Demo photos for now — swap these with real pictures or videos later.</p>
 
-      <div class="card">
-        <p>
-          Premier Barber Lounge is focused on consistency and detail — clean lines, fresh fades,
-          and an appointment that runs smooth from booking to finish. New clients can find you,
-          see your work, and book without DM’ing back and forth.
-        </p>
+      <div class="gallery-grid">
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
       </div>
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="card pad">
+        <p>
+          Premier Barber Lounge is a Wichita shop built around clean service, consistent cuts,
+          and a comfortable vibe. Whether you want something sharp and classic or modern and detailed,
+          we’ll get you right.
+        </p>
+        <a class="btn" href="about.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Location</h2>
+
+      <div class="grid-2">
+        <div class="card pad">
+          <h3>Address</h3>
+          <p>
+            601 N West Street<br>
+            Suite 134<br>
+            Wichita, KS
+          </p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="tel:+13163474298">Call</a>
+            <a class="btn primary" target="_blank"
+               href="https://www.google.com/maps/search/?api=1&query=601+N+West+Street+Suite+134+Wichita+KS">
+              Open in Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="card pad">
+          <h3>Hours</h3>
+          <p>Hours not listed on IG — add them here when you get them.</p>
+          <p class="mini">Example: Mon–Sat 10am–7pm • Sun Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  Demo preview only — not the official Premier Barber Lounge website.
+  <div class="container">
+    © <span id="y"></span> Premier Barber Lounge • Wichita, KS
+  </div>
 </footer>
 
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
