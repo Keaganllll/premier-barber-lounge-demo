@@ -111,9 +111,9 @@
           </p>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn" href="tel:+13163474298">Call</a>
-            <a class="btn primary" target="_blank"
-               href="https://www.google.com/maps/search/?api=1&query=601+N+West+Street+Suite+134+Wichita+KS">
-              Open in Maps
+            <a id="directionsBtn2" class="btn primary" target="_blank" rel="noopener">
+  Get Directions
+</a>
             </a>
           </div>
         </div>
@@ -151,12 +151,17 @@
     const isAppleDevice =
       /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
 
-    // Call button
-    document.getElementById("callBtn").href = "tel:" + phoneNumber;
+    // Call
+    const callBtn = document.getElementById("callBtn");
+    if (callBtn) callBtn.href = "tel:" + phoneNumber;
 
-    // Directions button
-    document.getElementById("directionsBtn").href =
-      isAppleDevice ? appleMaps : googleMaps;
+    // Directions button #1
+    const dir1 = document.getElementById("directionsBtn");
+    if (dir1) dir1.href = isAppleDevice ? appleMaps : googleMaps;
+
+    // Directions button #2
+    const dir2 = document.getElementById("directionsBtn2");
+    if (dir2) dir2.href = isAppleDevice ? appleMaps : googleMaps;
   })();
 </script>
 </body>
