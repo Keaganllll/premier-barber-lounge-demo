@@ -262,3 +262,4 @@ footer{
   .brand{justify-content:center}
   .brand .logo-text{text-align:center}
 }
+iframe { display: none !important; }
